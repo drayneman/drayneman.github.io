@@ -38,9 +38,15 @@ import SmallBlock from "./smallblock"
 //   siteTitle: ``,
 // }
 
+import style from "./header.module.css"
+
 export default function Header({siteTitle}) {
   return(
-    <SmallBlock color="red">Home</SmallBlock>
+    <div className={style.wrapper}>
+      <SmallBlock color="red">Home</SmallBlock>
+      <SmallBlock color="blue">About</SmallBlock>
+      <SmallBlock color="yellow">Blog</SmallBlock>
+    </div>
   )
 }
 // export default Header
