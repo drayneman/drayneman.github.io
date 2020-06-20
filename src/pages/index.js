@@ -1,11 +1,14 @@
 import React from "react"
 
 import Patchwork from "../components/patchwork"
+import Content from "../components/content"
 
 const IndexPage = () => (
   <Patchwork>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <Content>
+      <p>Welcome to your new Gatsby site.</p>
+      <p>Now go build something great.</p>
+    </Content>
   </Patchwork>
 )
 
