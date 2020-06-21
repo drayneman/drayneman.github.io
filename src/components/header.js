@@ -1,5 +1,6 @@
 import React from "react"
 import SmallBlock from "./smallblock"
+import { Link } from "gatsby"
 
 // const Header = ({ siteTitle }) => (
 //   <header
@@ -43,9 +44,10 @@ import style from "./header.module.css"
 export default function Header({siteTitle}) {
   return(
     <div className={style.wrapper}>
-      <SmallBlock color="red">Home</SmallBlock>
-      <SmallBlock color="blue">About</SmallBlock>
-      <SmallBlock color="yellow">Blog</SmallBlock>
+      <SmallBlock color="white"><Link to="/">Patchwork</Link></SmallBlock>
+      <SmallBlock color="yellow"><Link to="/">Blog</Link></SmallBlock>
+      <SmallBlock color="green"><Link to="/about/">About</Link></SmallBlock>
+      <SmallBlock color="red"><Link to="/">Contact</Link></SmallBlock>
     </div>
   )
 }
