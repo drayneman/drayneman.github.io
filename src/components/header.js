@@ -1,6 +1,5 @@
 import React from "react"
 import SmallBlock from "./smallblock"
-import { Link } from "gatsby"
 
 // const Header = ({ siteTitle }) => (
 //   <header
@@ -40,15 +39,21 @@ import { Link } from "gatsby"
 // }
 
 import style from "./header.module.css"
+import COLOR from "./colors"
 
 export default function Header({siteTitle}) {
   return(
-    <div className={style.wrapper}>
-      <SmallBlock color="white"><Link to="/">Patchwork</Link></SmallBlock>
-      <SmallBlock color="yellow"><Link to="/">Blog</Link></SmallBlock>
-      <SmallBlock color="green"><Link to="/about/">About</Link></SmallBlock>
-      <SmallBlock color="red"><Link to="/">Contact</Link></SmallBlock>
-    </div>
+    <header className={style.header}>
+      {/* break into own file at some point */}
+      <nav className={style.navigator}>
+        <ul>
+          <li><SmallBlock color={COLOR.main} to="/">Home</SmallBlock></li>
+          <li><SmallBlock color={COLOR.c1} to="/blog/">Blog</SmallBlock></li>
+          <li><SmallBlock color={COLOR.c2} to="/about/">About</SmallBlock></li>
+          <li><SmallBlock color={COLOR.c3} to="/contact/">Contact</SmallBlock></li>
+        </ul>
+      </nav>
+    </header>
   )
 }
 // export default Header

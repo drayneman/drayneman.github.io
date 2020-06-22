@@ -1,4 +1,18 @@
-.wrapper {
-    display: grid;
-    grid-template-columns: 3fr repeat(3, 1fr);
+.header {
+    top: 0;
+    position: sticky;
+}
+
+.navigator {
+}
+
+.navigator > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navigator > ul > li {
+    display: inline-block;
 }

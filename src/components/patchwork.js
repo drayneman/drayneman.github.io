@@ -10,7 +10,10 @@ import Header from "./header"
 export default function Patchwork({children}) {
   return(
     <div className={style.patchwork}>
-      <Header></Header>
+      {/* this is definitely a hack */}
+      <div className="spacer" style={{minHeight: "50px"}}>
+      </div>
+      <Header siteTitle="Patchwork"></Header>
       {children}
     </div>
   )
