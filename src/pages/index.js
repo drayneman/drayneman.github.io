@@ -1,11 +1,9 @@
 import React from "react"
 
 import Patchwork from "../components/patchwork"
-import Content from "../components/content"
 
 const Home = () => (
   <Patchwork>
-    <Content>
       <h1>Welcome to your new Gatsby site.</h1>
       <p>Now go build something great.</p>
       <p>
@@ -29,7 +27,6 @@ Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputat
 
 Viverra vitae congue eu consequat ac. Orci ac auctor augue mauris augue. Duis ultricies lacus sed turpis tincidunt id aliquet risus. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat. Adipiscing elit ut aliquam purus sit. Ipsum consequat nisl vel pretium lectus quam id leo in. Purus ut faucibus pulvinar elementum integer enim neque. Varius morbi enim nunc faucibus a pellentesque sit. Elementum integer enim neque volutpat ac tincidunt. Diam quis enim lobortis scelerisque fermentum dui faucibus in. A pellentesque sit amet porttitor eget.
       </p>
-    </Content>
   </Patchwork>
 )
 

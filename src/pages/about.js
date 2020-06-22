@@ -5,10 +5,8 @@ import Content from "../components/content"
 
 const About = () => (
   <Patchwork>
-    <Content>
-      <h1>About</h1>
-      <p>Patchwork is a site created by Tyler Tokumoto.</p>
-    </Content>
+    <h1>About</h1>
+    <p>Patchwork is a site created by Tyler Tokumoto.</p>
   </Patchwork>
 )
 
