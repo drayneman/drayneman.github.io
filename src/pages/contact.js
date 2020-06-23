@@ -2,6 +2,7 @@ import React from "react"
 import COLORS from "../components/colors"
 
 import Patchwork from "../components/patchwork"
+import Content from "../components/content"
 
 class Contact extends React.Component {
   componentDidMount() {
@@ -11,8 +12,10 @@ class Contact extends React.Component {
   render() {
     return (
       <Patchwork color={COLORS.c2}>
-        <h1>Contact</h1>
-        <p>Patchwork is a site created by Tyler Tokumoto.</p>
+        <Content>
+          <h1>Contact</h1>
+          <p>Patchwork is a site created by Tyler Tokumoto.</p>
+        </Content>
       </Patchwork>
     )
   }
