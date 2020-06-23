@@ -1,6 +1,6 @@
 import React from "react"
 import SmallBlock from "./smallblock"
-import COLOR from "./colors"
+import COLORS from "./colors"
 
 class Navigator extends React.Component {
   constructor(props) {
@@ -11,13 +11,14 @@ class Navigator extends React.Component {
 
   collapseWithScroll() {
     let topDistance = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
-    if (topDistance < 100) {
-      this.setState({paddingTop: 100 - topDistance})
+    if (topDistance < 90) {
+      this.setState({paddingTop: 90 - topDistance})
       console.log(this.state.paddingTop)
     }
 
-    else if (topDistance > 100 && this.state.paddingTop !== topDistance) {
-      this.setState({paddingTop: 0})
+    else if (topDistance > 90 && this.state.paddingTop !== 0) {
+      this.setState({paddingTop: 10})
+      console.log(this.state.paddingTop)
     }
   }
 
@@ -27,10 +28,10 @@ class Navigator extends React.Component {
     return (
       <nav className={this.props.className}>
         <ul>
-          <li><SmallBlock color={COLOR.main} to="/" scrollAction={this.collapseWithScroll} paddingTop={paddingTop}>Home</SmallBlock></li>
-          <li><SmallBlock color={COLOR.c1} to="/blog/" scrollAction={this.collapseWithScroll} paddingTop={paddingTop}>Blog</SmallBlock></li>
-          <li><SmallBlock color={COLOR.c2} to="/about/" scrollAction={this.collapseWithScroll} paddingTop={paddingTop}>About</SmallBlock></li>
-          <li><SmallBlock color={COLOR.c3} to="/contact/" scrollAction={this.collapseWithScroll} paddingTop={paddingTop}>Contact</SmallBlock></li>
+          <li><SmallBlock color={COLORS.main} to="/" scrollAction={this.collapseWithScroll} paddingTop={paddingTop}>Home</SmallBlock></li>
+          <li><SmallBlock color={COLORS.c1} to="/about/" scrollAction={this.collapseWithScroll} paddingTop={paddingTop}>About</SmallBlock></li>
+          <li><SmallBlock color={COLORS.c2} to="/contact/" scrollAction={this.collapseWithScroll} paddingTop={paddingTop}>Contact</SmallBlock></li>
+          <li><SmallBlock color={COLORS.c3} to="/blog/" scrollAction={this.collapseWithScroll} paddingTop={paddingTop}>Blog</SmallBlock></li>
         </ul>
       </nav>
     )

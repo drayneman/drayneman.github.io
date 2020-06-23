@@ -6,16 +6,13 @@ import Content from "../components/content"
 import stylePatchwork from "./patchwork.module.css"
 import styleContent from "./content.module.css"
 
-// will represent complete layout consisting of:
-// - smallblocks, which build page sections
-// - wideblocks, which make title
-// - content towards the bottom
+// layout
 export default class Patchwork extends React.Component {
   render() {
     return(
-      <div className={stylePatchwork.patchwork}>
+      <div className={stylePatchwork.patchwork} style={{backgroundColor: this.props.color}}>
         <Header siteTitle="Patchwork"></Header>
-        <Content className={styleContent.content}>{this.props.children}</Content>
+        <Content className={styleContent.content} color={this.props.color}>{this.props.children}</Content>
       </div>
     )
   }

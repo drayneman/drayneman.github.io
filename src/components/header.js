@@ -41,11 +41,13 @@ import Navigator from "./navigator"
 import styleHeader from "./header.module.css"
 import styleNavigator from "./navigator.module.css"
 
-export default function Header({siteTitle}) {
-  return(
-    <header className={styleHeader.header}>
-      <Navigator className={styleNavigator.navigator} />
-    </header>
-  )
+export default class Header extends React.Component {
+  render() {
+    return(
+      <header className={styleHeader.header}>
+        <Navigator className={styleNavigator.navigator} />
+      </header>
+    )
+  }
 }
 // export default Header
