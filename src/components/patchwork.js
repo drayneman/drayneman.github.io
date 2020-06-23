@@ -10,11 +10,13 @@ import styleContent from "./content.module.css"
 // - smallblocks, which build page sections
 // - wideblocks, which make title
 // - content towards the bottom
-export default function Patchwork({children}) {
-  return(
-    <div className={stylePatchwork.patchwork}>
-      <Header siteTitle="Patchwork"></Header>
-      <Content className={styleContent.content}>{children}</Content>
-    </div>
-  )
+export default class Patchwork extends React.Component {
+  render() {
+    return(
+      <div className={stylePatchwork.patchwork}>
+        <Header siteTitle="Patchwork"></Header>
+        <Content className={styleContent.content}>{this.props.children}</Content>
+      </div>
+    )
+  }
 }

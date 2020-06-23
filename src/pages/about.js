@@ -1,7 +1,6 @@
 import React from "react"
 
 import Patchwork from "../components/patchwork"
-import Content from "../components/content"
 
 const About = () => (
   <Patchwork>

@@ -1,5 +1,5 @@
 import React from "react"
-import SmallBlock from "./smallblock"
+import Navigator from "./navigator"
 
 // const Header = ({ siteTitle }) => (
 //   <header
@@ -38,21 +38,13 @@ import SmallBlock from "./smallblock"
 //   siteTitle: ``,
 // }
 
-import style from "./header.module.css"
-import COLOR from "./colors"
+import styleHeader from "./header.module.css"
+import styleNavigator from "./navigator.module.css"
 
 export default function Header({siteTitle}) {
   return(
-    <header className={style.header}>
-      {/* break into own file at some point */}
-      <nav className={style.navigator}>
-        <ul>
-          <li><SmallBlock color={COLOR.main} to="/">Home</SmallBlock></li>
-          <li><SmallBlock color={COLOR.c1} to="/blog/">Blog</SmallBlock></li>
-          <li><SmallBlock color={COLOR.c2} to="/about/">About</SmallBlock></li>
-          <li><SmallBlock color={COLOR.c3} to="/contact/">Contact</SmallBlock></li>
-        </ul>
-      </nav>
+    <header className={styleHeader.header}>
+      <Navigator className={styleNavigator.navigator} />
     </header>
   )
 }
