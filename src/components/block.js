@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import style from "./smallblock.module.css"
+import style from "./block.module.css"
 
 class SmallBlock extends React.Component {
   constructor(props) {
@@ -24,10 +24,9 @@ class SmallBlock extends React.Component {
   }
 
   render() {
-    // console.log('smallblock paddingTop:' + this.props.paddingTop.toString())
     return (
-      <Link to={this.props.to} className={style.smallblockLink}>
-        <div className={style.smallblock} style={{backgroundColor: this.props.color, paddingTop: this.props.paddingTop, fontFamily: this.props.fontFamily}}>
+      <Link to={this.props.to} className={style.blockLink}>
+        <div className={style.block} style={{backgroundColor: this.props.color, paddingTop: this.props.paddingTop}}>
           {this.props.children}
         </div>
       </Link>

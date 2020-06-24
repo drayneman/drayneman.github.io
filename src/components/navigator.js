@@ -1,6 +1,9 @@
 import React from "react"
-import SmallBlock from "./smallblock"
+import Block from "./block"
+import WideBlock from './wideblock'
 import COLORS from "./colors"
+
+import style from "./navigator.module.css"
 
 class Navigator extends React.Component {
   constructor(props) {
@@ -33,22 +36,15 @@ class Navigator extends React.Component {
   }
 
   render() {
-    const paddingTop = this.state.paddingTop
-    var homeTab = <li><SmallBlock fontFamily={"IBM Plex Sans Regular"} color={COLORS.main} to="/" scrollAction={this.collapseWithScroll} paddingTop={paddingTop}>patchwork</SmallBlock></li>
-    console.log(this.props.page === undefined)
-
-    if (this.props.page !== undefined && !this.props.page.localeCompare('home')) {
-      console.log('fired')
-      homeTab = <li><SmallBlock color={COLORS.main} to="/" scrollAction={this.collapseWithScroll} paddingTop={paddingTop}></SmallBlock></li>
-    }
+    const paddingTop = this.state.paddingTop;
 
     return (
-      <nav className={this.props.className}>
+      <nav className={style.navigator}>
+        <WideBlock color={COLORS.main} to="/">patchwork</WideBlock>
         <ul>
-          {homeTab}
-          <li><SmallBlock color={COLORS.c1} to="/about/" scrollAction={this.collapseWithScroll} paddingTop={paddingTop}>about</SmallBlock></li>
-          <li><SmallBlock color={COLORS.c2} to="/contact/" scrollAction={this.collapseWithScroll} paddingTop={paddingTop}>contact</SmallBlock></li>
-          <li><SmallBlock color={COLORS.c3} to="/blog/" scrollAction={this.collapseWithScroll} paddingTop={paddingTop}>blog</SmallBlock></li>
+          <li><Block color={COLORS.c1} to="/about/" scrollAction={this.collapseWithScroll} paddingTop={paddingTop}>about</Block></li>
+          <li><Block color={COLORS.c2} to="/contact/" scrollAction={this.collapseWithScroll} paddingTop={paddingTop}>contact</Block></li>
+          <li><Block color={COLORS.c3} to="/blog/" scrollAction={this.collapseWithScroll} paddingTop={paddingTop}>blog</Block></li>
         </ul>
       </nav>
     )

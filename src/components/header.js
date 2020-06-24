@@ -38,14 +38,15 @@ import Navigator from "./navigator"
 //   siteTitle: ``,
 // }
 
-import styleHeader from "./header.module.css"
-import styleNavigator from "./navigator.module.css"
+import style from "./header.module.css"
 
 export default class Header extends React.Component {
   render() {
     return(
-      <header className={styleHeader.header}>
-        <Navigator page={this.props.page} className={styleNavigator.navigator} />
+      <header className={style.header}>
+        <div className={style.navigatorWrapper}>
+          <Navigator page={this.props.page}/>
+        </div>
       </header>
     )
   }

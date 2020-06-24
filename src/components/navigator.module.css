@@ -1,12 +1,6 @@
 .navigator {
-    position: fixed;
-    right: 0;
-    left: 0;
-    /* margin: 0 auto; */
-    /* width: 100%; */
-    text-align: center;
-    /* transform: translateX(-50%); */
-    /* display: inline-block; */
+    display: flex;
+    flex-direction: column;
 }
 
 .navigator > ul {

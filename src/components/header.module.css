@@ -1,2 +1,11 @@
 .header {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+.navigator-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
 }
