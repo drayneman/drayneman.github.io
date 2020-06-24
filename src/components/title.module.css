@@ -1,12 +1,15 @@
 .title-holder {
-    margin: 6rem 1.5rem 1rem;
+    margin: 9rem 1rem 0;
+    /* text-align: center; */
+    /* position: fixed; */
 }
 
 .title {
-    font-family: IBM Plex;
-    font-size: 120pt;
+    font-family: IBM Plex Sans Thin;
+    font-size: 11rem;
 }
 
 .subtitle {
-    
+    font-family: IBM Plex Serif Regular;
+    margin-left: 1.05rem
 }

@@ -45,7 +45,7 @@ export default class Header extends React.Component {
   render() {
     return(
       <header className={styleHeader.header}>
-        <Navigator className={styleNavigator.navigator} />
+        <Navigator page={this.props.page} className={styleNavigator.navigator} />
       </header>
     )
   }

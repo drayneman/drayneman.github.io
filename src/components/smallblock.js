@@ -24,11 +24,10 @@ class SmallBlock extends React.Component {
   }
 
   render() {
-    console.log('smallblock paddingTop:' + this.props.paddingTop.toString())
+    // console.log('smallblock paddingTop:' + this.props.paddingTop.toString())
     return (
-      // is there a better way of doing this lol
       <Link to={this.props.to} className={style.smallblockLink}>
-        <div className={style.smallblock} style={{backgroundColor: this.props.color, paddingTop: this.props.paddingTop}}>
+        <div className={style.smallblock} style={{backgroundColor: this.props.color, paddingTop: this.props.paddingTop, fontFamily: this.props.fontFamily}}>
           {this.props.children}
         </div>
       </Link>

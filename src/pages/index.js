@@ -14,7 +14,7 @@ class Home extends React.Component {
 
   render() {
     return (
-      <Patchwork color={COLORS.main}>
+      <Patchwork page="home" color={COLORS.main}>
         <Content color={COLORS.main}>
           <Title/>
         </Content>
