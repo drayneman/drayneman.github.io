@@ -1,9 +1,10 @@
 const COLORS = {
-    main: "#031926",
-    c1: "#003D5B",
-    c2: "#30638E",
-    c3: "#00798C",
-    accent: "#32344D"
+    main: "#FAF0E6",
+    c1: "#B2E0F3",
+    c2: "#FFC1C1",
+    c3: "#B4D09F",
+    white: "#ECE5E0",
+    accent: "#FF9C6B"
 }
 
 export default COLORS

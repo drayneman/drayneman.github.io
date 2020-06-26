@@ -25,10 +25,10 @@ class SmallBlock extends React.Component {
 
   render() {
     return (
-      <Link to={this.props.to} className={style.blockLink}>
-        <div className={style.block} style={{backgroundColor: this.props.color, paddingTop: this.props.paddingTop}}>
+      <Link to={this.props.to} className={style.blockLink} style={{backgroundColor: this.props.color, paddingTop: this.props.paddingTop}}>
+        {/* <div className={style.blockText}> */}
           {this.props.children}
-        </div>
+        {/* </div> */}
       </Link>
     )
   }

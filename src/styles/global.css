@@ -1,11 +1,19 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
-    color: gainsboro;
     overflow-y: scroll;
+    box-sizing: border-box;
+
+    /* colors */
+    --bg: #FAF0E6;
+    --text: #36454F;
+    --white: #FFFCFA;
 }
 
 body {
     margin: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    border-color: var(--text);
 }
 
 @font-face {

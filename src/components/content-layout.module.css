@@ -1,0 +1,15 @@
+.patchwork-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.patchwork-top-spacer-title {
+    font-family: IBM Plex Sans Regular;
+    font-size: 52pt;
+    padding-top: 5rem;
+    padding-left: 8rem;
+}
+
+.patchwork-bottom-spacer {
+    height: 7rem;
+}

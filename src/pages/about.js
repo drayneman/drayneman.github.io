@@ -3,18 +3,14 @@ import COLORS from "../components/colors"
 
 import {Link} from "gatsby"
 
-import Patchwork from "../components/patchwork"
+import ContentLayout from "../components/content-layout"
 import Content from "../components/content"
 
 class About extends React.Component {
-  componentDidMount() {
-    document.body.style.backgroundColor = COLORS.c1
-  }
-  
   render() {
     return (
-      <Patchwork color={COLORS.c1}>
-        <Content>
+      <ContentLayout page='about'>
+        <Content color={COLORS.c1}>
           <h1>About</h1>
           <p>Patchwork is a site created by Tyler Tokumoto.</p>
             <h1>Welcome to your new Gatsby site.</h1>
@@ -41,7 +37,7 @@ class About extends React.Component {
 
       Viverra vitae congue eu consequat ac. Orci ac auctor augue mauris augue. Duis ultricies lacus sed turpis tincidunt id aliquet risus. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat. Adipiscing elit ut aliquam purus sit. Ipsum consequat nisl vel pretium lectus quam id leo in. Purus ut faucibus pulvinar elementum integer enim neque. Varius morbi enim nunc faucibus a pellentesque sit. Elementum integer enim neque volutpat ac tincidunt. Diam quis enim lobortis scelerisque fermentum dui faucibus in. A pellentesque sit amet porttitor eget.</p>
         </Content>
-      </Patchwork>
+      </ContentLayout>
     )
   }
 }
