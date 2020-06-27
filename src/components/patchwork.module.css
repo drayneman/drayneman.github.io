@@ -6,10 +6,17 @@
 .patchwork-top-spacer-title {
     font-family: IBM Plex Sans Regular;
     font-size: 52pt;
-    padding-top: 5rem;
+    padding-top: 6rem;
     padding-left: 8rem;
+    padding-bottom: .5rem;
 }
 
 .patchwork-bottom-spacer {
     height: 7rem;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: .25rem 0 0;
+    width: 100%;
 }

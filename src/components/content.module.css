@@ -3,15 +3,11 @@
     background-color: inherit;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.content-wrapper {
-    margin: 0 auto;
-    padding: 1rem 0 0;
-    width: 100%;
+    font-family: IBM Plex Sans Regular;
 }
 
 .content {
     background-color: var(--white);
+    width: 100%;
     padding: 1rem 16rem;
 }
