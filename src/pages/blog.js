@@ -9,8 +9,8 @@ class Blog extends React.Component {
     return (
       <ContentLayout page='blog' color={COLORS.c3}>
         <Content>
-          <h1>Blog</h1>
-          <p>Patchwork is a site created by Tyler Tokumoto.</p>
+          <h1>when I grow up, I want to be a cog in the machine.</h1>
+          <p>just kidding. ice road trucker is more my calling.</p>
         </Content>
       </ContentLayout>
     )
