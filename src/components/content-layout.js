@@ -10,11 +10,11 @@ export default class ContentLayout extends React.Component {
     return(
       <div className={style.patchwork}>
         <Header siteTitle="patchwork" page={this.props.page}></Header>
-        <div classname={style.patchworkFlex}>
+        <div className={style.patchworkFlex}>
           <div className={style.patchworkTopSpacerTitle}>
             {this.props.page}
           </div>
-          <div className={style.contentWrapper} style={{backgroundColor: this.props.color}} />
+          <div className={style.contentSeparator} style={{backgroundColor: this.props.color}} />
           {this.props.children}
           <div className={style.patchworkBottomSpacer}></div>
         </div>

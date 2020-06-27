@@ -9,7 +9,7 @@ export default class TitleLayout extends React.Component {
     return (
       <div className={style.patchwork}>
         <Header page={this.props.page}/>
-        <div classname={style.patchworkFlex}>
+        <div className={style.patchworkFlex}>
           {this.props.children}
         </div>
       </div>

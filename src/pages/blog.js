@@ -10,7 +10,7 @@ class Blog extends React.Component {
       <ContentLayout page='blog' color={COLORS.c3}>
         <Content>
           <h1>when I grow up, I want to be a cog in the machine.</h1>
-          <p>just kidding. ice road trucker is more my calling.</p>
+          <p>*ice road trucker. sorry, i don't know what came over me.</p>
         </Content>
       </ContentLayout>
     )

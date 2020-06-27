@@ -1,22 +1,21 @@
 .patchwork-flex {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
 }
 
 .patchwork-top-spacer-title {
     font-family: IBM Plex Sans Regular;
     font-size: 52pt;
     padding-top: 6rem;
-    padding-left: 8rem;
+    /* padding-left: 8rem; */
     padding-bottom: .5rem;
 }
 
 .patchwork-bottom-spacer {
-    height: 7rem;
+    height: 6rem;
 }
 
-.content-wrapper {
-    margin: 0 auto;
-    padding: .25rem 0 0;
-    width: 100%;
+.content-separator {
+    padding: .25rem 2rem 0;
 }

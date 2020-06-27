@@ -9,8 +9,8 @@ class Contact extends React.Component {
     return (
       <ContentLayout page='contact' color={COLORS.c2}>
         <Content>
-          <h1>Contact</h1>
-          <p>Patchwork is a site created by Tyler Tokumoto.</p>
+          <h1>you'll never find me</h1>
+          <p></p>
         </Content>
       </ContentLayout>
     )

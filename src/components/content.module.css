@@ -1,12 +1,13 @@
 .main {
     display: flex;
-    background-color: inherit;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .content {
     background-color: var(--white);
-    width: 100%;
-    padding: 1rem 16rem;
+    padding: 0rem 2rem;
+    margin: 0 auto;
+    max-width: 60rem;
 }

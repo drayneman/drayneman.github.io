@@ -1,11 +1,10 @@
 .header {
     position: fixed;
-    text-align: center;
-    width: 100%;
+    right: 0;
 }
 
 .navigator-wrapper {
     display: flex;
-    justify-content: center;
-    margin: 0 auto;
+    justify-content: space-between;
+    /* margin: 0 auto; */
 }
